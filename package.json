@@ -1,0 +1,28 @@
+{
+  "name": "car",
+  "version": "1.0.0",
+  "description": "Unit testing example in node.js Uses Mocha Chai library",
+  "main": "shouldBuyCar.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlocadiz/unit_testing_nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlocadiz/unit_testing_nodejs/issues"
+  },
+  "homepage": "https://github.com/carlocadiz/unit_testing_nodejs#readme"
+}
