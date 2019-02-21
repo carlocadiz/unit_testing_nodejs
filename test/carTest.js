@@ -47,5 +47,63 @@ describe("#shouldBuyCar()", function() { // 3
   });
 
 
+   it("should return true if fuel economy is 6 and price is under or equal to 5000", function() {
+    const car = {
+      litresPer100km: 6,
+      price: 5000
+    };
+    const shouldBuy = shouldBuyCar(car);
+    assert.isTrue(shouldBuy);
+  });
+
+   it("should return false if fuel economy is 6 and price is over 5000", function() {
+    const car = {
+      litresPer100km: 6,
+      price: 5001
+    };
+    const shouldBuy = shouldBuyCar(car);
+    assert.isFalse(shouldBuy);
+  });
+
+it("should return true if fuel economy is 11 and price is under or equal to 5000", function() {
+    const car = {
+      litresPer100km: 11,
+      price: 5000
+    };
+    const shouldBuy = shouldBuyCar(car);
+    assert.isTrue(shouldBuy);
+  });
+
+   it("should return false if fuel economy is 11 and price is over 5000", function() {
+    const car = {
+      litresPer100km: 11,
+      price: 5001
+    };
+    const shouldBuy = shouldBuyCar(car);
+    assert.isFalse(shouldBuy);
+  });
+
+   it("should return false if fuel economy is 5 and price is under or equal to 5000", function() {
+    const car = {
+      litresPer100km: 5,
+      price: 5000
+    };
+    const shouldBuy = shouldBuyCar(car);
+    assert.isFalse(shouldBuy);
+  });
+
+   it("should return false if fuel economy is 5 and price is over 5000", function() {
+    const car = {
+      litresPer100km: 5,
+      price: 5001
+    };
+    const shouldBuy = shouldBuyCar(car);
+    assert.isFalse(shouldBuy);
+  });
+
+
+
+
+
 
 });
